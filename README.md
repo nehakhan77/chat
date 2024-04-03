@@ -17,8 +17,11 @@ Offline Mode: Users can read messages when offline.
 ## Prerequsites
 
 Node.js
+
 Expo CLI
+
 Android Studio (for Android development)
+
 Xcode (for iOS development)
 
 
