@@ -2,14 +2,16 @@ import { useEffect } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
 const Chat = ({ route, navigation }) => {
-    const { name } = route.params;
+    const { name , background } = route.params;
 
+
+{/* Set username */}
 useEffect(() => {
-    navigation.setOptions({ title: name });
+    navigation.setOptions({ title: name});
 }, []);
 
 return (
-   <View style={styles.container}>
+   <View style={[styles.container, {backgroundColor: background}]}>
      <Text>Hello Screen2!</Text>
    </View>
  );
