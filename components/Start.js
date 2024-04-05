@@ -107,8 +107,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '80%',
     justifyContent: "space-between",
-    top: 5,
-    bottom: 5
+    marginBottom: 50,
  },
  });
 
