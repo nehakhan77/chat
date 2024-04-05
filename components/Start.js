@@ -18,7 +18,7 @@ const Start = ({ navigation }) => {
                 placeholder='Type your username here'
                 />
                 {/* View with text and colors container */}
-                <Text style={styles.backgroundColorText}>Choose Background Color</Text>
+                <Text style={styles.backgroundColorText}>Choose Your Background Color</Text>
                 {/* Color selection buttons */}
 
                 <View style={styles.colorButtonsBox}>
@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
    height: '44%',
    marginBottom: 30,
    justifyContent: 'space-evenly',
+   borderRadius: 10,
  },
  textInput: {
     fontSize: 16,
@@ -83,31 +84,30 @@ const styles = StyleSheet.create({
     height: "100%"
  },
  backgroundColorText: {
-    fontSize: 16,
+    fontSize: 18,
     color: "#757083",
-    marginTop: 20,
     fontWeight: "300",
-    flex: 1
+    marginBottom: 20,
  },
  appTitle: {
     fontSize: 45,
     fontWeight: "600",
     color: "#FFFFFF",
     justifyContent: "center",
-    marginBottom: 50,
+    marginBottom: 20,
     marginTop: 50
  },
  colorButton: {
     width: 50,
     height: 50,
-    margin: 10,
     borderRadius: 25
  },
  colorButtonsBox: {
+    display: "flex",
     flexDirection: 'row',
     width: '80%',
     justifyContent: "space-between",
-    marginBottom: 50,
+    marginBottom: 20,
  },
  });
 

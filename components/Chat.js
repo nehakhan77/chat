@@ -62,7 +62,7 @@ return (
         _id: 1
       }}
     />
-    { Platform.OS === 'andrioid' ? <KeyboardAvoidingView behavior= "height" /> : null }                                   
+    { Platform.OS === 'android' ? <KeyboardAvoidingView behavior= "height" /> : null }                                   
    </View>
  );
 }
