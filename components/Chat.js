@@ -55,21 +55,22 @@ useEffect(() => {
 return (
    <View style={[styles.container, {backgroundColor: background}]}>
      <GiftedChat
-      messages={messages}
-      renderBubble={renderBubble}
-      onSend={messages => onSend(messages)}
-      user={{
-        _id: 1
-      }}
-    />
-    { Platform.OS === 'android' ? <KeyboardAvoidingView behavior= "height" /> : null }                                   
-   </View>
- );
+        messages={messages}
+        renderBubble={renderBubble}
+        onSend={messages => onSend(messages)}
+        user={{
+          _id: 1,
+          name
+        }}
+      />
+      {Platform.OS === "android" ? <KeyboardAvoidingView behavior="height" /> : null}
+    </View>
+  )
 }
 
 const styles = StyleSheet.create({
  container: {
-   flex: 1,
+   flex: 1
  }
 });
 
