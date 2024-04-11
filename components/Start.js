@@ -1,10 +1,26 @@
 import { useState } from 'react';
-import { StyleSheet, View, Text, TouchableOpacity, TextInput, ImageBackground, KeyboardAvoidingView, Platform } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, TextInput, ImageBackground, KeyboardAvoidingView, Platform, Alert } from 'react-native';
+
+//Enable the Anonymous sign-in method.
+import { getAuth, signInAnonymously } from "firebase/auth";
 
 const Start = ({ navigation }) => {
+    const auth = getAuth();
     const [name, setName] = useState("");
     const [background, setBackground] = useState("");
     const colors = ['#090C08', '#474056', '#8A95A5', '#B9C6AE'];
+
+
+    const signInUser = () => {
+    signInAnonymously(auth)
+      .then(result => {
+        navigation.navigate("Chat", {userID: result.user.uid, name:name, background:background });
+        Alert.alert("Signed in Successfully!");
+      })
+      .catch((error) => {
+        Alert.alert("Unable to sign in, try later again.");
+      })
+  }
 
     return(
         <ImageBackground source={require('../img/BackgroundImage.png')} resizeMode='cover' style={styles.backgroundImage}>
@@ -42,7 +58,7 @@ const Start = ({ navigation }) => {
                   accessibilityHint="Lets you enter the chatroom."
                   accessibilityRole="button"
                   style={styles.button}
-                  onPress={() => navigation.navigate('Chat', { name: name, background: background })}>
+                  onPress={signInUser}>
                 <Text style={styles.buttonText}>Start Chatting</Text>
                 </TouchableOpacity> 
                 {Platform.OS === 'ios' ? <KeyboardAvoidingView behavior="padding" /> : null}
