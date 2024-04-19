@@ -28,20 +28,26 @@ Xcode (for iOS development)
 
 
 ## Set Up This App
+
+● Clone the Repository
 ```
 https://github.com/nehakhan77/chat.git
 ```
-Navigate to the chat-app folder and run npm install
-Set up Firebase for your project:
-Sign in at Google Firebase
-Create a project
-Set up Firestore Database (production mode)
-Adjust rules from allow read, write: if false; to allow read, write: if true;
-Register app(</>) in Project Overview
-Navigate to the chat-app folder and install the Firebase using npm install firebase
-Initialize Firebase by copying and pasting the provided Firebase configuration into the App.js
-Download Android Studio on your computer or use the Expo Go App on your mobile device
-Run expo start
+
+● Navigate to the chat-app folder and run npm install
+● Set up Firebase for your project:
+● Sign in at Google Firebase
+● Create a project
+● Set up Firestore Database (production mode)
+● Adjust rules from allow read, write: if false; to allow read, write: if true;
+● Register app(</>) in Project Overview
+● Navigate to the chat-app folder and install the Firebase using npm install firebase
+● Initialize Firebase by copying and pasting the provided Firebase configuration into the App.js
+● Download Android Studio on your computer or use the Expo Go App on your mobile device
+● Run expo start
+```
+npx expo start
+```
 
 ## References 
 
