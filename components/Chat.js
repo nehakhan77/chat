@@ -3,7 +3,6 @@ import { StyleSheet, View, KeyboardAvoidingView, Platform, TouchableOpacity, Tex
 import { GiftedChat, Bubble, InputToolbar } from "react-native-gifted-chat";
 import { collection, addDoc, onSnapshot, orderBy, query } from "firebase/firestore";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-
 import CustomActions from './CustomActions';
 import MapView from 'react-native-maps';
 import { Audio } from 'expo-av';
@@ -16,7 +15,6 @@ const Chat = ({ route, navigation , db, isConnected, storage }) => {
 
   //Messages database
   let unsubMessages;
-
   useEffect(() => {
     navigation.setOptions({ title: name});
 
@@ -93,7 +91,7 @@ const Chat = ({ route, navigation , db, isConnected, storage }) => {
 
 
    const renderCustomActions = (props) => {
-    return <CustomActions storage={storage} {...props} />;
+    return <CustomActions storage={storage} {...props}/>;
   };
 
   const renderCustomView = (props) => {
