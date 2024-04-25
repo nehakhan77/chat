@@ -1,6 +1,6 @@
 ## Objective 
 
-To build a React Native chat application that provides users a chat interface and real-time messaging with the use of Firebase. This app allows users to instantly message their friends, share their current location, share images, send audio recordings and access their previous conversations when offline.
+To build a React Native chat application that provides users real-time messaging with the use of Firebase. This app allows users to instantly message their friends, share their current location, share images from their library or camera, send audio recordings and access their previous conversations when offline.
 
 ## Key Features 
 
@@ -26,6 +26,9 @@ Xcode (for iOS development)
 
 ## App User Interface
 
+<img width="328" alt="Screenshot 2024-04-24 at 8 25 17 PM" src="https://github.com/nehakhan77/chat/assets/136394004/88c6bfcc-6c2c-430a-83a5-83317d2462b5">
+
+<img width="338" alt="Screenshot 2024-04-24 at 8 24 23 PM" src="https://github.com/nehakhan77/chat/assets/136394004/900da7aa-08ef-4d86-bac4-635d807043d5">
 
 ## Set Up This App
 
